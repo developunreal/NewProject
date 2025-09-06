@@ -11,7 +11,7 @@ from langchain.document_loaders import TextLoader
 import os
 
 app = FastAPI()
-llm = Ollama(model="llama3.2:latest")
+llm = Ollama(model="llama")
 memory = ConversationBufferMemory()
 chat_chain = ConversationChain(llm=llm, memory=memory)
 
