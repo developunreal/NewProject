@@ -6,7 +6,7 @@ import pyttsx3
 
 st.title("🎙️ Voice Chatbot with LangChain")
 
-model = st.selectbox("Choose Model", ["llama3", "mistral"])
+model = st.selectbox("Choose Model", ["llama3.2", "mistral"])
 duration = st.slider("Recording duration (sec)", 3, 10, 5)
 
 if st.button("Record"):
